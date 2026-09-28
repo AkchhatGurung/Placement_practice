@@ -42,12 +42,11 @@
 
 class Solution {
     public void reverseString(char[] s) {
-            int count=0;
-            for(int i=s.length-1;i>=s.length/2;i--){
+
+            for(int i=0;i<s.length/2;i++){
                 char temp=s[i];
-                s[i]=s[count];
-                s[count]=temp;
-                count++;
+                s[i]=s[s.length-i-1];
+                s[s.length-i-1]=temp;
             }
     }
     
