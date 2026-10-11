@@ -62,8 +62,8 @@ class Solution {
         int currentSum=0;
         int maxSum=nums[0];
 
-        for(int num:nums){
-            currentSum+=num;
+        for(int i=0;i<nums.length;i++){
+            currentSum+=nums[i];
 
             if(currentSum>maxSum){
                 maxSum=currentSum;
