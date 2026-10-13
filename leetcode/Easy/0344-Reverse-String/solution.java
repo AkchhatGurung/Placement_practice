@@ -5,12 +5,17 @@
 
 class Solution {
     public void reverseString(char[] s) {
+        int first=0;
+        int last=s.length-1;
+        while(first<last){
+            char temp=s[first];
+            s[first]=s[last];
+            s[last]=temp;
 
-            for(int i=0;i<s.length/2;i++){
-                char temp=s[i];
-                s[i]=s[s.length-i-1];
-                s[s.length-i-1]=temp;
-            }
+            first++;
+            last--;
+            if(first==last)
+                break;
+        }
     }
-    
 }
