@@ -59,10 +59,15 @@
 
 class Solution {
     public int lengthOfLastWord(String s) {
-            String[] sp=s.split(" ");
-            int last=sp.length-1;
-            int len=sp[last].length();
-            return len;
+        s=s.trim();
+        int count=0;
+        for(int i=s.length()-1;i>=0;i--){
+            if(s.charAt(i)==' '){
+                break;
+            }
+            count++;
+        }
+        return count;
     }
 }
 ```
