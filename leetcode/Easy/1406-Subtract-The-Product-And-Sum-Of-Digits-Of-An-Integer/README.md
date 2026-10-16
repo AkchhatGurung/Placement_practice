@@ -52,15 +52,15 @@ Result = 32 - 11 = 21
 
 class Solution {
     public int subtractProductAndSum(int n) {
-            int pd=1,sd=0,ans,digit;
-            while(n!=0){
-                digit=n%10;
-                pd=pd*digit;
-                sd=sd+digit;
-                n=n/10;
-            }
-            ans=pd-sd;
-            return ans;
+        int sum=0,digit,prod=1,result;
+        while(n!=0){
+            digit=n%10;
+            sum+=digit;
+            prod*=digit;
+            n=n/10;
+        }
+        result=prod-sum;
+        return result;
     }
 }
 ```
