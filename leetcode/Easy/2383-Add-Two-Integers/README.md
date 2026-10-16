@@ -46,7 +46,7 @@ Given two integers <code>num1</code> and <code>num2</code>, return <em>the <stro
 
 class Solution {
     public int sum(int num1, int num2) {
-        return num1+num2;    
+        return num1+num2;
     }
 }
 ```
